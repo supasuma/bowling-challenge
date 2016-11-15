@@ -2,6 +2,7 @@ var game = new Game();
 
 function Bowl() {
   game.bowl();
+  console.log(document.getElementById('spnScore'));
   document.getElementById('spnScore').innerHTML = game.calculateScore();
   document.getElementById('spnFrame').innerHTML = game._frames.length;
   var currentCell = document.getElementById('frm'+game._frames.length);
